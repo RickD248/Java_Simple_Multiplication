@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Tabuada {
+
+	public static void main(String[] args) {
+		
+		//vars
+		
+		//Scanner
+		Scanner in = new Scanner(System.in);
+		
+		//resultado
+		int result;
+		
+		//numero que vai mudar
+		int numero1a10 = 1;
+		
+		System.out.println("Digite o número que você quer ver a tabuada");
+
+		int numero = in.nextInt();
+		
+		System.out.println(" ");
+		System.out.println("Até que número você quer que seu numero seja multiplicado?");
+		
+		int x = in.nextInt();
+		
+		System.out.println(" ");
+		
+		while (numero1a10 <= x ) {
+		
+		result = (numero * numero1a10);
+		
+		System.out.println(numero + " * " + numero1a10 + " = " + result);
+		
+		numero1a10 ++;
+				
+		}
+		
+		in.close();
+		
+	}
+	
+}
